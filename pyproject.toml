@@ -1,8 +1,9 @@
 [tool.poetry]
-name = "fastapi nlp"
+name = "fastapi-nlp"
 version = "0.1.0"
 description = ""
 authors = ["Gabrijel Radovcic"]
+package-mode = "true"
 readme = "README.md"
 
 [tool.poetry.dependencies]
