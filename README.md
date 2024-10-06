@@ -37,7 +37,8 @@ In this application, I decided to use the **`SentenceTransformer`** model with t
 ### Steps
 
 1. **Clone the Repository**:
-git clone [https://github.com/your-username/your-repo-name.git ](https://github.com/gabrijelradovcic/FastAPI-NLP)
+git clone "https://github.com/gabrijelradovcic/FastAPI-NLP.git"
+
 cd FastAPI-NLP
 
 2. **Install Dependencies**:
