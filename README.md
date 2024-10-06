@@ -31,15 +31,17 @@ In this application, I decided to use the **`SentenceTransformer`** model with t
 
 ### Prerequisites
 
-- Python 3.10 or later version
-- Poetry
+- [Python 3.10 or later](https://www.python.org/downloads/) — Ensure that Python is installed on your system.
+- [Poetry](https://python-poetry.org/docs/#installation) — Poetry is used for dependency management in this project.
+Ensure that after installations Poetry and Python are added to PATH environmental variable
 
 ### Steps
 
 1. **Clone the Repository**:
 git clone "https://github.com/gabrijelradovcic/FastAPI-NLP.git"
 
-cd FastAPI-NLP
+Make sure you are in right directory when running server using Command Prompt
+- "cd FastAPI-NLP"
 
 2. **Install Dependencies**:
 Using Poetry, run the following command to install all required dependencies:
@@ -50,8 +52,8 @@ Using Poetry, run the following command to install all required dependencies:
 
 4. **Run the FastAPI Application**:
 Start the FastAPI server in Command Prompt with Uvicorn:
- - "uvicorn main --reload"
-The server will start at `http://127.0.0.1:8000`
+ - "uvicorn main:app --reload"
+To test open another Command prompt and run examples using curl.
 
 ### API Endpoints
 
@@ -70,7 +72,7 @@ Input should be a JSON object with the following structure saved as input.json i
 ]
 }
 **Example Using `curl`**:
-  To test this endpoint, you can use the following `curl` command:
+  To test this endpoint, you can use the following `curl` command in different Command Prompt then where server is run:
   ```bash
   curl -X POST "http://127.0.0.1:8000/process-input/"
   ```
@@ -97,7 +99,7 @@ The request should be a JSON object with the following structure saved as input.
 ]
 }
 - **Example Using `curl`**:
-  To test this endpoint, you can use the following `curl` command:
+  To test this endpoint, you can use the following `curl` command in different Command Prompt then where server is run:
   ```bash
   curl -X POST "http://127.0.0.1:8000/similar-title/" -H "Content-Type: application/json" -d "{\"reference\": \"Higgs boson in particle physics\", \"other\": [\"Best soup recipes\", \"Basel activities\", \"Particle physics at CERN\"]}"
   ```
